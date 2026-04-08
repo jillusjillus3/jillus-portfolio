@@ -1,19 +1,20 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0a0a0a] text-white py-8 border-t border-white/10 font-sans">
-            <div className="container mx-auto px-4 md:px-10 flex flex-col md:flex-row justify-between items-center text-sm md:text-base">
-                <p className="text-gray-500 mb-4 md:mb-0">
-                    &copy; 2026 D. Pravin Kumar. All rights reserved.
+        <footer className="footer-section">
+            <div className="container footer-container">
+                <p className="footer-copyright">
+                    &copy; 2026 Jillus.J.J. All rights reserved.
                 </p>
 
-                <div className="flex items-center space-x-6">
+                <div className="footer-links">
                     <a
                         href="https://www.linkedin.com/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-500 hover:text-blue-400 transition"
+                        className="footer-link"
                     >
                         LinkedIn
                     </a>

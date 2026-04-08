@@ -1,0 +1,142 @@
+.project-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.project-header-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .project-header-title {
+    font-size: 3rem;
+  }
+}
+
+.project-header-desc {
+  color: var(--text-muted);
+  max-width: 42rem;
+  margin: 0 auto 2rem auto;
+}
+
+.project-header-btn {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #60a5fa; /* blue-400 */
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.project-header-btn:hover {
+  background-color: rgba(37, 99, 235, 0.3);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  background-color: #111;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.project-image-container {
+  position: relative;
+  height: 16rem;
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+
+.project-image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.project-card:hover .project-image-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.project-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--primary-hover);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.project-content {
+  padding: 2rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+  color: #fff; /* Ensure white text in dark card */
+}
+
+.project-card:hover .project-title {
+  color: #60a5fa; /* blue-400 */
+}
+
+.project-desc {
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.625;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-tag {
+  color: #6b7280; /* gray-500 */
+  font-size: 0.875rem;
+  font-weight: 500;
+}

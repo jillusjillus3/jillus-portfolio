@@ -1,0 +1,170 @@
+.education-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.education-header-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .education-header-title {
+    font-size: 3rem;
+  }
+}
+
+.education-header-desc {
+  color: var(--text-muted);
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.education-group {
+  margin-bottom: 4rem;
+}
+
+.education-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  color: #60a5fa; /* blue-400 */
+}
+
+.title-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.75rem;
+}
+
+.title-icon-small {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.75rem;
+}
+
+.education-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: background-color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .education-card {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+:root:not(.dark) .education-card {
+  background-color: #f9fafb;
+  border-color: #e5e7eb;
+}
+
+:root:not(.dark) .education-card:hover {
+  background-color: #f3f4f6;
+}
+
+.education-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.education-degree {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .education-degree {
+    font-size: 1.5rem;
+  }
+}
+
+.education-school {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+}
+
+.education-year {
+  background-color: rgba(37, 99, 235, 0.2);
+  color: #60a5fa; /* blue-400 */
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .education-year {
+    margin-top: 0;
+  }
+}
+
+/* Certifications */
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cert-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+:root:not(.dark) .cert-card {
+  background-color: #f9fafb;
+  border-color: #e5e7eb;
+}
+
+:root:not(.dark) .cert-card:hover {
+  background-color: #f3f4f6;
+}
+
+.cert-card:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cert-indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 9999px;
+  margin-right: 1rem;
+}
+
+.cert-name {
+  color: #e5e7eb; /* gray-200 */
+  font-weight: 500;
+}
+
+:root:not(.dark) .cert-name {
+  color: #374151; /* gray-700 */
+}

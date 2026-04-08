@@ -6,7 +6,7 @@ import Education from './Portfolio/Education'
 import Project from './Portfolio/Project'
 import Contact from './Portfolio/Contact'
 import Footer from './Portfolio/Footer'
-import './App.css'
+
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Project />
       <Contact />
       <Footer />
-      <div className="container mx-auto p-4">
+      <div className="app-container">
         {/* Main Content will go here */}
       </div>
     </>

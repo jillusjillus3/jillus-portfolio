@@ -1,53 +1,100 @@
 import React from 'react';
+import './Tech.css';
 
 const Tech = () => {
     const techStack = [
-        {
-            category: "Primary Frontend",
-            skills: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript", "Modern React Hooks", "Component-based Architecture", "Client-side Rendering (CSR) & SSR"]
-        },
-        {
-            category: "UI & Styling",
-            skills: ["Tailwind CSS", "shadcn/ui", "Responsive Web Design", "Accessibility (a11y) Basics", "Modern UI Component Architecture", "Cross-Browser Compatibility"]
-        },
-        {
-            category: "State & Data",
-            skills: ["TanStack Query (React Query)", "Server State Management", "REST API Integration", "Client-side State Management", "Optimistic Updates", "Caching & Background Refetching", "Performance Optimization"]
-        },
-        {
-            category: "Supporting",
-            skills: ["Angular (Basic)", "NestJS (Basic)", "Prisma ORM (Basic)"]
-        },
-        {
-            category: "Databases",
-            skills: ["SQL (Basic)", "Relational Database Fundamentals", "PostgreSQL", "MySQL"]
-        },
-        {
-            category: "Tools",
-            skills: ["Git (Version Control)", "GitHub", "Git Bash", "VS Code", "Google Antigravity (AI-Powered IDE)"]
-        }
-    ];
+  {
+    category: "Frontend Development",
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "React.js",
+      "Bootstrap",
+      "Responsive Web Design",
+      "DOM Manipulation",
+      "jQuery"
+    ]
+  },
+  {
+    category: "Frontend Advanced",
+    skills: [
+      "React Hooks",
+      "Context API",
+      "React Router",
+      "Component-based Architecture",
+      "Form Handling",
+      "API Integration (Axios)",
+      "Cross-Browser Compatibility"
+    ]
+  },
+  {
+    category: "Backend Development",
+    skills: [
+      "Java",
+      "Spring Boot",
+      "REST API Development",
+      "JSP",
+      "Servlets",
+      "MVC Architecture",
+      "Dependency Injection"
+    ]
+  },
+  {
+    category: "Database",
+    skills: [
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "SQL (DDL, DML)",
+      "Joins & Queries",
+      "Database Design Basics"
+    ]
+  },
+  {
+    category: "Programming Concepts",
+    skills: [
+      "Object-Oriented Programming (OOP)",
+      "Collections Framework",
+      "Exception Handling",
+      "Multithreading",
+      "File Handling",
+      "Java 8 (Lambda, Streams Basics)"
+    ]
+  },
+  {
+    category: "Tools & Technologies",
+    skills: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Git Bash",
+      "REST APIs",
+      "Version Control"
+    ]
+  }
+];
 
     return (
-        <section id="tech" className="bg-[#0a0a0a] text-white py-20 px-4 md:px-10 font-sans">
-            <div className="container mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-4">Tech Stack</h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+        <section id="tech" className="tech-section">
+            <div className="container">
+                <div className="tech-header">
+                    <h2 className="tech-header-title">Tech Stack</h2>
+                    <p className="tech-header-desc">
                         A curated list of technologies I use to build scalable and performant applications.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="tech-grid">
                     {techStack.map((tech, index) => (
-                        <div key={index} className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition duration-300">
-                            <div className="flex items-center mb-6">
-                                <span className="w-8 h-1 bg-blue-500 rounded-full mr-3"></span>
-                                <h3 className="text-xl font-bold">{tech.category}</h3>
+                        <div key={index} className="tech-card">
+                            <div className="tech-card-header">
+                                <span className="tech-card-indicator"></span>
+                                <h3 className="tech-card-title">{tech.category}</h3>
                             </div>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="tech-skills">
                                 {tech.skills.map((skill, idx) => (
-                                    <span key={idx} className="bg-white/10 text-gray-300 text-sm py-1.5 px-3 rounded-full hover:bg-white/20 transition cursor-default">
+                                    <span key={idx} className="tech-skill-tag">
                                         {skill}
                                     </span>
                                 ))}
